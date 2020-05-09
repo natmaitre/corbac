@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brawl Stars</title>
+  </head>
+  <body>
+  <div class="source" id="source_one">
+    <video id="example_video_1" autoplay loop controls preload="none" width="640" height="360" poster="" data-setup="{}">
+      <source id="source_video" src="corbacfermer.mp4" type='video/mp4' />
+    </video>
+  </div>
+<script>
+      var a = document.getElementById('source_one');
+      a.addEventListener('click',function() {
+          document.getElementById("example_video_1").pause();
+          document.getElementById("source_video").setAttribute('src',"corbacouvert.mp4");
+          document.getElementById("example_video_1").load();
+          document.getElementById("example_video_1").play();
+      });
+</script>
+
+</body>
+</html>
